@@ -1,0 +1,23 @@
+execute pathogen#infect()
+
+set autoindent
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+syntax on
+
+set hlsearch
+
+let mapleader=","       " leader is comma
+noremap <leader>t :tabnew<CR>
+noremap <leader>n :NERDTreeTabsToggle<CR>
+noremap <leader>w <C-W><C-W>
+noremap <leader>l <C-W>l
+noremap <leader>h <C-W>h
+noremap <leader>j <C-W>j
+noremap <leader>k <C-W>k
+noremap <leader>b :bnext<CR>
+noremap <leader>B :bprevious<CR>
+noremap <leader>f :CtrlPBuffer<CR>
+noremap <leader>F :CtrlP<CR>
+noremap t :tabn<CR>
+noremap T :tabp<CR>
+noremap <space> :nohl<CR>
