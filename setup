@@ -1,0 +1,10 @@
+#!/bin/bash
+
+HERE=$(dirname "${BASH_SOURCE[0]}")
+
+"$HERE"/vim/setup
+"$HERE"/i3/setup
+"$HERE"/i3status/setup
+"$HERE"/tmux/setup
+
+echo "All set up!"
