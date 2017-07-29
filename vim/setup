@@ -4,7 +4,14 @@ HERE=$(dirname "${BASH_SOURCE[0]}")
 
 if [ -f ~/.vimrc ]; then
   echo "A vimrc already exists on this computer!"
-  exit 1
 else
-  cp $HERE/.vimrc ~/.vimrc
+  cp $HERE/vimrc ~/.vimrc
 fi
+
+# pathogen
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+# nerdtree + tabs
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+git clone https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/nerdtreetabs
