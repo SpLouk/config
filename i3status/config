@@ -7,6 +7,7 @@ general {
 order += "run_watch DHCP"
 order += "path_exists VPN"
 order += "wireless wlan0"
+order += "volume master"
 order += "battery 0"
 order += "tztime local"
 
@@ -21,6 +22,16 @@ battery 0 {
     integer_battery_capacity = true
     path = "/sys/class/power_supply/BAT%d/uevent"
     low_threshold = 10
+}
+
+volume master {
+  format = "🔈 %volume"
+  format_muted = "🔇 %volume"
+  device = "default"
+  mixer = "Master"
+  mixer_idx = 0
+  align = "right"
+  min_width = 50
 }
 
 run_watch DHCP {
