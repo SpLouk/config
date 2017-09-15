@@ -36,8 +36,8 @@ bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
 
 exec --no-startup-id nm-applet
-exec --no-startup-id xautolock -time 10 -locker i3lock-fancy
-bindsym $mod+Delete exec --no-startup-id i3lock-fancy
+exec --no-startup-id xautolock -time 10 -locker i3lock
+bindsym $mod+Delete exec --no-startup-id i3lock
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
