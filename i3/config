@@ -32,12 +32,12 @@ floating_modifier $mod
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
-bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
 bindsym XF86AudioMute exec amixer -D pulse sset Master toggle
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
 
 exec --no-startup-id nm-applet
-exec --no-startup-id xautolock -time 10 -locker i3lock
-bindsym $mod+Delete exec --no-startup-id i3lock
+exec --no-startup-id xautolock -time 1 -locker 'i3lock -c 0f0b4e'
+bindsym $mod+Delete exec --no-startup-id i3lock -c 0f0b4e
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -113,6 +113,8 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+n workspace next
+bindsym $mod+p workspace prev
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
