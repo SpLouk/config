@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "$(($(cat /sys/class/backlight/intel_backlight/brightness) - 50))" > /sys/class/backlight/intel_backlight/brightness
+touch "foo"

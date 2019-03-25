@@ -9,3 +9,6 @@ else
   mkdir -p ~/.config/i3
   cp $HERE/config ~/.config/i3/config
 fi
+
+cp $HERE/inc_brightness ~/.config/i3/
+cp $HERE/dec_brightness ~/.config/i3/
