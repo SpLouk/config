@@ -3,6 +3,7 @@ execute pathogen#infect()
 set autoindent
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 syntax on
+filetype plugin indent on
 
 set hlsearch
 
@@ -21,3 +22,13 @@ noremap <leader>F :CtrlP<CR>
 noremap t :tabn<CR>
 noremap T :tabp<CR>
 noremap <space> :nohl<CR>
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\  },
+\}
+
+
+
+color dracula

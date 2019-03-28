@@ -15,3 +15,9 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 # nerdtree + tabs
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 git clone https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/nerdtreetabs
+
+# dracula theme
+git clone git@github.com:dracula/vim.git ~/.vim/bundle/dracula-theme
+
+# emmet
+git clone git@github.com:mattn/emmet-vim.git ~/.vim/bundle/emmet-vim
